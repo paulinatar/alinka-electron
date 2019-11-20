@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React, { Component } from "react";
 import FormHeader from "./FormHeader/FormHeader.js";
 import { Form } from "react-final-form";
@@ -69,13 +68,7 @@ export default class DocumentForm extends Component {
             <FormHeader page={this.state.page} />
             {activePage}
             <div className={styles.buttons}>
-              {/* {page > 0 && <Button onClick={this.previous} label="wróć"/>} */}
-              {page > 0 && <Button onClick={this.previous} label="test" />}
-              {/*{page > 0 && (*/}
-              {/*    <button type="button" onClick={this.previous}>*/}
-              {/*      Wróć2*/}
-              {/*    </button>*/}
-              {/*)}*/}
+              {page > 0 && <Button onClick={this.previous} label="wróć" />}
               {isLastPage ? (
                   <Button type="submit" disabled={submitting} label="utwórz dokument"/>
 
